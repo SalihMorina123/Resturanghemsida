@@ -1,0 +1,200 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inika', serif;
+    background-color: #6F7E6E;
+}
+
+
+/*nav*/
+.nav-2{
+    position: absolute;
+    right: 120px;
+}
+
+
+ul{
+    margin: 0;
+    padding: 20px;
+    list-style-type: none;
+    display: flex;
+    gap: 28px;    
+    background-color:#211B1B;
+}
+
+ul a{
+    font-size: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+/*main här är allt viktigt i hemsidan*/
+
+main{
+    margin-top: 100px;
+}
+
+div h1 {
+    margin: auto;
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+.menu-info-c{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-items: center;
+    gap: 60px;
+
+}
+
+.menu-info-c img{
+    width: 20vw;
+}
+
+.menu-info-c h2, h3 {
+    margin: 0 100px 0 0;
+    padding: 0;
+    color: #BABABA;
+    font-size: 20px;
+}
+
+.menu-info-c h3 {
+    margin: 0 269px 0 0;
+    padding: 0;
+    color: #BABABA;
+    font-size: 20px;
+}
+
+
+
+
+.menu-info {
+    display: grid;
+    grid-template-rows: auto;
+    place-items: center;
+}
+.info-1 {
+    font-size: 30px;
+    text-align: center;
+    color: #BABABA;
+    text-transform: uppercase;
+    margin-bottom:90px;
+}
+
+.btn-cart  {
+    background-color: #2F2E2E;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 15px;
+    margin-right: 150px;
+    margin-top: 20px;
+    border: none;
+    font-family: 'inika', serif;
+}
+
+/*footer*/
+
+.fot-c{
+    width: 100vw;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    box-sizing: border-box;
+}
+
+.fot-1{
+    margin-left: 40px;
+}
+
+.fot-2{
+    position: absolute;
+    right: 140px;
+}
+.fot-3{
+    position: absolute;
+    right: 80px;
+}
+.fot-4{
+    position: absolute;
+    right: 20px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    main {
+        flex: 1;
+    }
+
+    .nav-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-2 {
+        position: static;
+        margin-top: 10px; 
+    }
+
+    ul {
+        padding: 10px;
+    }
+
+    ul a {
+        font-size: 18px;
+    }
+
+    main {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+
+    .info-1 {
+        font-size: 25px;
+        margin-bottom: 70px;
+    }
+
+    .menu-info-c {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .menu-info-c img {
+        width: 100%;
+    }
+
+    .menu-info-c h2, .menu-info-c h3 {
+        margin: 0;
+        font-size: 16px;
+    }
+
+    .menu-info-c h3 {
+        margin: 0;
+    }
+
+    .btn-cart {
+        margin-right: 0;
+        margin-top: 10px;
+    }
+
+    .fot-c{
+        width: 100%;
+        box-sizing: border-box;
+        position: static;
+        bottom: 0;
+        height: 53px;
+    }
+
+}
